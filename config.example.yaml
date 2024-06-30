@@ -1,0 +1,17 @@
+app:
+  name: string
+  port: :8080
+  prefork: true 
+
+database:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: password
+  name: noobeeid
+  sslmode: disable
+  connection_pool:
+    max_open_connection: 20
+    max_idle_connection: 10
+    max_lifetime: 60 # in seconds
+    max_idletime: 10 # in seconds
